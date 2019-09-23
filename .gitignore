@@ -1,2 +1,5 @@
 env/
+tw_env/
+data/
 .vscode
+scripts/config.py
