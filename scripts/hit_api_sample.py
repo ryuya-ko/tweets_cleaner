@@ -30,7 +30,6 @@ def main():
 
 def getTimeline():
     res = api.GetHomeTimeline()
-    print(type(res))
     for tw in res:
         print('==========')
         print(tw.user.screen_name)

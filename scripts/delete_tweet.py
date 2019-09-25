@@ -17,9 +17,7 @@ with open(input_path.format('tweet.js')) as target:
     tw_data = json.loads(target.read()[25:])
 
 for tweet in tw_data:
-    print(tweet)
     year_tw = int(tweet['created_at'][-4:])
-    print(year_tw)
     if year_tw <= 2017:
         target_id = int(tweet['id'])
         try:
